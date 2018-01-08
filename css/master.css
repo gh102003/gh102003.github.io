@@ -1,0 +1,21 @@
+body {
+  font-family: Bahnschrift, Helvetica, Arial, sans-serif;
+  background-color: #EEE;
+  color: #111;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+}
+
+a:hover {
+  color: #000;
+  background-color: rgba(255, 180, 180, 0.3);
+}
+
+h1 {
+  font-size: 800%;
+}
