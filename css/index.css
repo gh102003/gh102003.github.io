@@ -1,39 +1,60 @@
+/* Header */
+
 .header {
   /* Fallback */
   background: #FB750A;
 
   margin: 0px;
-  padding: 5px;
+  padding: 0px 0px 10px 0px;
   background: linear-gradient(#FF821B, #FA6904);
   color: white;
+  display: block;
+  width: auto;
 }
 
 .header h1 {
-  line-height: 10%;
+  padding: 10px;
+  margin: 0px;
 }
 
 .section-list {
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px;
+  margin: 0px;
 }
 
 .section-list li {
   display: inline-block;
-  padding: 20px;
   text-transform: uppercase;
 }
 
 .section-list li:hover {
   background-color: rgba(0, 0, 0, 0.45);
-  animation: fade
 }
 
 .section-list a {
-  display: inline;
-  padding: 0px;
+  display: block;
+  padding: 0.9vw;
+  font-size: 0.9vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-list a {
+    padding: 1.6vw;
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section-list a {
+    padding: 2.6vw;
+    font-size: 2.6vw;
+  }
 }
 
 .section-list a:hover {
-  all: inherit;
-  padding: 0px;
+  color: white;
   background: none;
 }
+
+/* End of Header */

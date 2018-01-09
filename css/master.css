@@ -1,5 +1,5 @@
 body {
-  font-family: Bahnschrift, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background-color: #EEE;
   color: #111;
   margin: 0px;
@@ -17,5 +17,25 @@ a:hover {
 }
 
 h1 {
-  font-size: 800%;
+  font-family: "Lilita One", Bahnschrift, Helvetica, Arial, sans-serif;
+  font-size: 5vw;
+  -webkit-text-stroke: 0.1vw black;
+  text-stroke: 0.1vw black;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 12vw;
+  }
+}
+
+.content {
+  margin: 10px;
+  max-width: 800px;
 }
