@@ -1,14 +1,14 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #EEE;
+  background-color: #FFF;
   color: #111;
   margin: 0px;
+  font-size: 0.9vw;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  padding: 1%;
 }
 
 a:hover {
@@ -18,19 +18,27 @@ a:hover {
 
 h1 {
   font-family: "Lilita One", Bahnschrift, Helvetica, Arial, sans-serif;
-  font-size: 5vw;
-  -webkit-text-stroke: 0.1vw black;
-  text-stroke: 0.1vw black;
+  font-size: 4.7vw;
+  -webkit-text-stroke: 0.2vw black;
+  text-stroke: 0.2vw black;
 }
 
 @media only screen and (max-width: 1200px) {
+  body {
+    font-size: 1.6vw;
+  }
+
   h1 {
     font-size: 7vw;
   }
 }
 
 @media only screen and (max-width: 650px) {
+  body {
+    font-size: 3vw;
+  }
+
   h1 {
-    font-size: 14vw;
+    font-size: 15vw;
   }
 }
