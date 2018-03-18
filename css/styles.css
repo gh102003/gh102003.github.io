@@ -1,0 +1,48 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #FFF;
+  color: #111;
+  margin: 0px;
+  font-size: 1vw;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Lilita One", Bahnschrift, Helvetica, Arial, sans-serif;
+  font-size: 4.7vw;
+  -webkit-text-stroke: 0.15vw black;
+  text-stroke: 0.15vw black;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 1.6vw;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}

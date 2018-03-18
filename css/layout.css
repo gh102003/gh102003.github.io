@@ -1,0 +1,58 @@
+.page {
+  padding: 1% 0%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.content {
+  padding: 0 2%;
+  /* outline: 1px solid black; */
+}
+
+.content a:hover {
+  background-color: rgba(255, 180, 180, 0.3);
+}
+
+.main {
+  flex: 4;
+  box-sizing: border-box;
+  max-width: 1200px;
+  line-height: 1.8em;
+}
+
+.right {
+  border-left: 1px solid #AAA;
+  flex: 1;
+  box-sizing: border-box;
+  max-width: 300px;
+}
+
+.quick-links {
+  padding-left: 2vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .page {
+    padding: 2%;
+  }
+
+  .content {
+    padding: 0% 3%;
+  }
+
+  .main {
+    flex: 3;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main {
+    flex: 1 100%;
+  }
+
+  .right {
+    border: none;
+    border-top: 1px solid black;
+  }
+}
