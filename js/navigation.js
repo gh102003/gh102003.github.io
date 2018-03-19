@@ -2,7 +2,11 @@ alert("a");
 
 $(document).ready(function () {
 
+  alert("b");
+
   $(".btn-toggle-menu").click(function() {
+
+    alert("c");
 
     if($(".directory").is(".open")) {
       $(".directory-wrapper").slideUp({"duration": 600, "easing": "easeInOutCubic", "queue": false});
