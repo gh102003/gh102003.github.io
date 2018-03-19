@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+  alert("a");
+
   $(".btn-toggle-menu").click(function() {
 
     if($(".directory").is(".open")) {
