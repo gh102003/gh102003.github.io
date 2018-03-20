@@ -10,8 +10,14 @@
   /* outline: 1px solid black; */
 }
 
+.content a {
+  border: 2px solid rgba(255, 130, 27, 0.9);
+  border-radius: 5px;
+  padding: 0.25vw;
+}
+
 .content a:hover {
-  background-color: rgba(255, 180, 180, 0.3);
+  background-color: rgba(255, 130, 27, 0.6);
 }
 
 .main {
@@ -55,4 +61,8 @@
     border: none;
     border-top: 1px solid black;
   }
+}
+
+.main img {
+  width: 100%;
 }
