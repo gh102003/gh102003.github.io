@@ -3,7 +3,7 @@
   background: #FB750A;
 
   margin: 0px;
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 0.5vw 0px;
   background: linear-gradient(#FF821B, #FA6904);
   color: white;
   display: block;
@@ -74,8 +74,12 @@
     font-size: 1.6vw;
   }
 
+  .header {
+    padding: 0 0 0.7vw 0;
+  }
+
   .header h1 {
-    padding: 1.2%;
+    padding: 1vw 1.8vw;
   }
 
   .nav-bar img {
@@ -87,11 +91,15 @@
 @media only screen and (max-width: 650px) {
   .section-list a {
     padding: 2.8vw;
-    font-size: 3.2vw;
+    font-size: 3vw;
+  }
+
+  .header {
+    padding: 0 0 1.5vw 0;
   }
 
   .header h1 {
-    padding: 1.6%;
+    padding: 1vw 2.8vw;
   }
 
   .nav-bar img {

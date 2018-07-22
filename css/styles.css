@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #FFF;
-  color: #111;
+  background-color: #fff;
+  color: #1a1a1a;
   margin: 0px;
   font-size: 1vw;
   overflow-y: scroll;
@@ -56,7 +56,7 @@ h1 {
   }
 
   h1 {
-    font-size: 15vw;
+    font-size: 13vw;
   }
 }
 

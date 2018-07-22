@@ -68,8 +68,8 @@
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   display: block;
-  height: 0.4vw;
   content: "";
+  height: 0.4vw;
   width: 100%;
   left: 0;
   top: 0;
@@ -143,6 +143,10 @@
   .title-image {
     width: 80%;
   }
+
+  .cookies-notification::before {
+    height: 0.6vw;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -168,5 +172,9 @@
 
   .title-image {
     width: 100%;
+  }
+
+  .cookies-notification::before {
+    height: 0.8vw;
   }
 }
