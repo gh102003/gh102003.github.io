@@ -12,11 +12,34 @@ a {
   color: inherit;
 }
 
+.content a {
+  border: 2px solid rgba(255, 130, 27, 0.8);
+  padding: 0.25vw;
+  position: relative;
+}
+
+.content a::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 0px;
+  display: block;
+  content: "";
+  background-color: rgba(255, 130, 27, 0.8);
+  transition: width 300ms;
+  z-index: -1;
+}
+
+.content a:hover::before {
+  width: 100%;
+}
+
 h1 {
   font-family: "Lilita One", Bahnschrift, Helvetica, Arial, sans-serif;
   font-size: 4.7vw;
-  -webkit-text-stroke: 0.15vw black;
-  text-stroke: 0.15vw black;
+  /*-webkit-text-stroke: 0.15vw black;*/
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -42,7 +65,12 @@ h1 {
 .unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select:none;
-  -o-user-select:none;
-  user-select:none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+  -ms-user-drag: none;
+  -o-user-drag: none;
 }
