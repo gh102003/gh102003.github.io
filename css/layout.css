@@ -7,7 +7,6 @@
 
 .content {
   padding: 0 2%;
-  /* outline: 1px solid black; */
 }
 
 .main {
@@ -18,14 +17,23 @@
 }
 
 .right {
-  border-left: 1px solid #AAA;
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
   flex: 1;
   box-sizing: border-box;
   max-width: 300px;
 }
 
-.quick-links {
+.quick-links h3 {
+  margin-bottom: 0.5vw;
+}
+
+.quick-links ul {
   padding-left: 2vw;
+  margin: 0;
+}
+
+.quick-links a:hover {
+  font-weight: bold;
 }
 
 .adsbygoogle {
@@ -33,17 +41,15 @@
 }
 
 .sidebar-ads {
-  border: 3px solid black;
-}
-
-.sidebar-ads > * {
-  border: 2px solid blue;
-}
-
-.sidebar-ads {
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  margin: 1.5vw 0;
   text-transform: uppercase;
   text-align: center;
 }
+
+/* .sidebar-ads > * {
+  border: 2px solid blue;
+} */
 
 .cookies-notification {
   background-color: rgba(250, 105, 4, 0.9);
@@ -78,6 +84,12 @@
   cursor: pointer;
 }
 
+.title-image {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
 @media only screen and (max-width: 1200px) {
   .page {
     padding: 2%;
@@ -101,6 +113,10 @@
     width: 5vw;
     height: 5vw;
   }
+
+  .title-image {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -123,8 +139,8 @@
     width: 12vw;
     height: 12vw;
   }
-}
 
-.main img {
-  width: 100%;
+  .title-image {
+    width: 100%;
+  }
 }
