@@ -28,6 +28,23 @@
   padding-left: 2vw;
 }
 
+.adsbygoogle {
+  display: block;
+}
+
+.sidebar-ads {
+  border: 3px solid black;
+}
+
+.sidebar-ads > * {
+  border: 2px solid blue;
+}
+
+.sidebar-ads {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .cookies-notification {
   background-color: rgba(250, 105, 4, 0.9);
   color: white;
