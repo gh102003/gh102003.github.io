@@ -1,4 +1,5 @@
 var cookiesAccepted = false;
+var timeBeforeCookiesAutoAccepted = 10000;
 
 function init()
 {
@@ -36,7 +37,7 @@ function cookiesNotifcationSetup() {
   })
 
   // After 7 seconds, automatically accept cookies
-  setTimeout(acceptCookies, 7000);
+  setTimeout(acceptCookies, timeBeforeCookiesAutoAccepted);
 }
 
 function checkCookiesDismissed() {
