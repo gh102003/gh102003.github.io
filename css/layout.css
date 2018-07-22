@@ -116,6 +116,10 @@
   margin: auto;
 }
 
+.main img {
+  background-size: cover; 
+}
+
 @media only screen and (max-width: 1200px) {
   .page {
     padding: 2%;
