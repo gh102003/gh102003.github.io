@@ -1,27 +1,14 @@
-function init(documentPath)
+function init()
 {
-  // Init images
-  console.log(documentPath);
-  console.log(documentPath.lastIndexOf("gh102003.github.io"));
-  var pathFromDomain = documentPath.substring(documentPath.lastIndexOf("gh102003.github.io") + 18 + 1);
-  console.log(pathFromDomain);
-  var prefixLength = pathFromDomain.split("/").length - 1;
-  console.log(prefixLength);
-  var prefix = "../".repeat(prefixLength);
-  console.log(prefix);
+  checkCookiesDismissed();
 
-  $(".btn-toggle-menu").attr("src", prefix.concat("res/img/icon/open_menu.png"));
-
-  console.log($(".stylesheet-link").attr("href"));
-  console.log(prefix.concat($(".stylesheet-link").attr("href")));
-
-  for (link of $(".stylesheet-link")) {
-    console.log(link);
-    $(link).attr("href", prefix.concat($(link).attr("href")));
-  }
-  // $(".stylesheet-link").attr("href", prefix.concat($(this).attr("href")));
-
-
+  $(".btn-close-cookies-notification").click(function () {
+    // Close the popup
+    $(".cookies-notification").slideToggle({"duration": 400, "easing": "easeInOutCubic"});
+    
+    // Store a value to say that the user knows about cookies
+    localStorage.setItem("dismissedCookies", "true");
+  })
 
   $(".btn-toggle-menu").click(function() {
 
@@ -39,4 +26,10 @@ function init(documentPath)
       $(".btn-toggle-menu").css("transform", "scale(1, -1)");
     }
   })
+}
+
+function checkCookiesDismissed() {
+  if (localStorage.getItem("dismissedCookies") == "true") {
+    $(".cookies-notification").hide();
+  }
 }

@@ -1,5 +1,16 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117158349-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117158349-1');
+    </script>
+
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Gh102003</title>
     <meta name="viewport" content="width=device-width" />
@@ -7,7 +18,20 @@
     <!-- Google Fonts: "Lilita One" and "Open Sans" -->
     <link href="https://fonts.googleapis.com/css?family=Lilita+One|Open+Sans" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../res/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../res/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../res/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../res/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../res/img/favicon/safari-pinned-tab.svg" color="#fa8019">
+    <link rel="shortcut icon" href="../res/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#fa8019">
+    <meta name="msapplication-config" content="../res/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffa039">
 
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css"/>
 
     <!-- jQuery and easing animation plugin -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,29 +39,74 @@
 
     <script src="../js/navigation.js" type="text/javascript"></script>
 
-    <!-- Load header and run header init JS -->
     <script type="text/javascript">
-
-      // Create function reference
-      // var initFunctionReference = partial(init, window.location.pathname);
-      console.log(window.location.pathname);
-
       $(document).ready(function() {
-        $(".header-placeholder").load("../header.html", function()
-        {
-          init(window.location.pathname);
-        });
+        init();
       });
     </script>
 
-    <link class="stylesheet-link" rel="stylesheet" href="css/styles.css">
-    <link class="stylesheet-link" rel="stylesheet" href="css/layout.css">
-    <link class="stylesheet-link" rel="stylesheet" href="css/header.css"/>
+    <link class="stylesheet-link" rel="stylesheet" href="../css/styles.css">
+    <link class="stylesheet-link" rel="stylesheet" href="../css/layout.css">
+    <link class="stylesheet-link" rel="stylesheet" href="../css/header.css"/>
 
   </head>
 
   <body>
-    <div class="header-placeholder unselectable"></div>
+    <div class="header unselectable">
+      <div class="page-title">
+        <h1><a href="index.html">Gh102003</a></h1>
+      </div>
+
+      <div class="navigation">
+        <div class="nav-bar">
+          <ul class="section-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">Minecraft</a></li>
+            <li><a href="#">Other games</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Setup</a></li>
+          </ul>
+          <img class="btn-toggle-menu" src="../res/img/icon/toggle_directory.png"/>
+        </div>
+
+        <div class="directory-wrapper">
+          <div class="directory">
+            <div class="directory-list-wrapper">
+              <ul class="directory-list">
+                <li><a href="programming/currency_converter.html">Currency Converter</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Minecraft</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Setup</a></li>
+              </ul>
+              <ul class="directory-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Minecraft</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Setup</a></li>
+              </ul>
+              <ul class="directory-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Minecraft</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Setup</a></li>
+              </ul>
+              <ul class="directory-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Minecraft</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Setup</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <div class="page">
       <div class="content main">
@@ -46,7 +115,7 @@
 
         <p>Currency Converter is a project that was worked on for the whole of 2017. It started
         as a simple application that could convert currencies, but its feature set grew over time.
-        These include:
+        This includes:
           <ul>
             <li>updating currencies from the internet</li>
             <li>a 'Currency Manager' where you can create custom currencies</li>
@@ -66,6 +135,10 @@
           <li>Setup</li>
         </ul>
       </div>
+    </div>
+    <div class="cookies-notification">
+      <p>By using this website, you agree to the use of cookies and analytics</p>
+      <div class="btn-close-cookies-notification">
     </div>
   </body>
 

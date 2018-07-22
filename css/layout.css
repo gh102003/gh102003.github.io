@@ -10,16 +10,6 @@
   /* outline: 1px solid black; */
 }
 
-.content a {
-  border: 2px solid rgba(255, 130, 27, 0.9);
-  border-radius: 5px;
-  padding: 0.25vw;
-}
-
-.content a:hover {
-  background-color: rgba(255, 130, 27, 0.6);
-}
-
 .main {
   flex: 4;
   box-sizing: border-box;
@@ -38,6 +28,39 @@
   padding-left: 2vw;
 }
 
+.cookies-notification {
+  background-color: rgba(250, 105, 4, 0.9);
+  color: white;
+  display: flex;
+  bottom:0px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.cookies-notification p {
+  font-size: 1.3vw;
+  padding: 1.6vw;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.btn-close-cookies-notification {
+  margin: 0 1.6vw;
+  width: 3.2vw;
+  height: 3.2vw;
+  background: url("../res/img/icon/cross.png") center no-repeat;
+  background-size: contain;
+  flex-grow: 0;
+}
+
+.btn-close-cookies-notification:hover {
+  background-image: url("../res/img/icon/cross_hover.png");
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1200px) {
   .page {
     padding: 2%;
@@ -50,6 +73,17 @@
   .main {
     flex: 3;
   }
+
+  .cookies-notification p {
+    font-size: 2vw;
+    padding: 2.3vw;
+  }
+
+  .btn-close-cookies-notification {
+    margin: 0 2.3vw;
+    width: 5vw;
+    height: 5vw;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -60,6 +94,20 @@
   .right {
     border: none;
     border-top: 1px solid black;
+  }
+
+  .cookies-notification {
+  }
+
+  .cookies-notification p {
+    padding: 4vw;
+    font-size: 3.5vw;
+  }
+
+  .btn-close-cookies-notification {
+    margin: 0 4vw;
+    width: 12vw;
+    height: 12vw;
   }
 }
 

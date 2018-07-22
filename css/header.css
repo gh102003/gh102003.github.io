@@ -20,7 +20,7 @@
 .navigation {
   background-color: rgba(0, 0, 0, 0.3);
   /* 2 shadows, one for top and one for bottom */
-  box-shadow: 0 5px 5px -5px black inset, 0 -5px 5px -5px black inset;
+  box-shadow: 0 5px 8px -5px rgba(0,0,0,0.75) inset, 0 -5px 8px -5px rgba(0,0,0,0.75) inset;
 }
 
 .nav-bar {
@@ -113,12 +113,12 @@
 .directory-wrapper {
   overflow: hidden;
   display: none;
-  box-shadow: 0 5px 5px -5px black inset;
+  box-shadow: 0 5px 8px -5px rgba(0,0,0,0.75) inset;
 }
 
 .directory {
   background-color: rgba(0, 0, 0, 0.3);
-  /* box-shadow: 0 5px 5px -5px black inset; */
+  /* box-shadow: 0 5px 8px -5px rgba(0,0,0,0.75) inset; */
   /* display: none; */
 
   top: -10.9vw;
