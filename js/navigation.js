@@ -1,4 +1,4 @@
-var analyticsEnabled = false;
+var cookiesAccepted = false;
 
 function init()
 {
@@ -32,11 +32,11 @@ function cookiesNotifcationSetup() {
     // Store a value to say that the user knows about cookies
     localStorage.setItem("dismissedCookies", "true");
 
-    setupAnalytics();
+    acceptCookies();
   })
 
-  // After 8 seconds, enable analytics
-  setTimeout(setupAnalytics, 8000);
+  // After 7 seconds, automatically accept cookies
+  setTimeout(acceptCookies, 7000);
 }
 
 function checkCookiesDismissed() {
@@ -47,17 +47,26 @@ function checkCookiesDismissed() {
   return false;
 }
 
-function setupAnalytics() {
-if (!analyticsEnabled) {
-    analyticsEnabled = true;
-    console.log("enabling analytics");
+function acceptCookies() {
+  if (!cookiesAccepted) {
+    cookiesAccepted = true;
+    console.log("Cookies accepted");
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-117158349-1');
+    setupAnalytics();
+    setupAdvertisments();
   }
+}
+
+function setupAnalytics() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117158349-1');
+}
+
+function setupAdvertisments() {
+  (adsbygoogle = window.adsbygoogle || []).push({});
 }
