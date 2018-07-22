@@ -3,7 +3,7 @@ var cookiesAccepted = false;
 function init()
 {
   if (checkCookiesDismissed()) {
-    setupAnalytics();
+    acceptCookies;
   } else {
     cookiesNotifcationSetup();
   }
