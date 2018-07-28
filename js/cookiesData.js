@@ -48,10 +48,12 @@ function setupAnalytics() {
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-117158349-1');
 }
 
 function setupAdvertisments() {
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4432679655476297",
+        enable_page_level_ads: true
+      });
 }
