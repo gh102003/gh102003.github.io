@@ -36,11 +36,9 @@
 
     <!-- JS -->
     <script src="../js/navigation.js"></script>
-    <script src="../js/cookiesData.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-          initNavigation();
-          initCookies();
+          init();
       });
     </script>
 
@@ -104,23 +102,8 @@
 
     <div class="page">
       <div class="content main">
-
-        <!-- Set a low-res background image using CSS for usage before the high-res image has loaded -->
-        <img class="title-image" style="background-image: url(../res/img/currency_converter/logoLowRes.png)" src="../res/img/currency_converter/logoHighRes.png" alt="Currency Converter logo"/>
-
-        <p>Currency Converter is a project that was worked on for the whole of 2017. It started
-        as a simple application that could convert currencies, but its feature set grew over time.
-        This includes:
-          <ul>
-            <li>updating currencies from the internet</li>
-            <li>a 'Currency Manager' where you can create custom currencies</li>
-            <li>a saves feature for remembering conversions</li>
-          </ul>
-        </p>
-
-        <p><a href="https://github.com/gh102003/Currency-Converter">GitHub</a></p>
-        <p><a href="https://github.com/gh102003/Currency-Converter/releases/download/v1.2.0/CurrencyConverter1.2.jar">Download v1.2 (from GitHub)</a></p>
-
+        <h2>About</h2>
+        <p>This website and its content is released under the <a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3 license</a></p>
       </div>
       <div class="content right">
         <div class="quick-links">
@@ -129,11 +112,10 @@
             <li><a href="https://github.com/gh102003">GitHub</a></li>
             <li><a href="https://www.youtube.com/channel/UCbMdEaJFjJrB1Yps4YhHSIA">YouTube</a></li>
             <li><a href="https://www.twitch.tv/gh102003g">Twitch</a></li>
-            <li>Setup</li>
           </ul>
         </div>
         <!-- Sidebar ads -->
-        <div class="sidebar-ads unselectable">
+        <div class="sidebar-ads">
           <p>Advertisements</p>
           <ins class="adsbygoogle"
             data-ad-client="ca-pub-4432679655476297"
@@ -143,9 +125,9 @@
         </div>
       </div>
     </div>
-    <div class="cookies-notification">
+    <div class="cookies-notification unselectable">
       <p>By continuing to use this website, you agree to the use of cookies and analytics. <a href="../about/privacy_policy.html">Privacy Policy</a></p>
-      <div class="btn-close-cookies-notification">
+      <div class="btn-close-cookies-notification"></div>
     </div>
   </body>
 

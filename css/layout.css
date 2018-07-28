@@ -1,26 +1,24 @@
 .page {
-  padding: 1% 0%;
+  padding: 1vw 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.content {
-  padding: 0 2%;
-}
-
 .main {
-  flex: 4;
+  flex: 3;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1050px;
   line-height: 1.8em;
+  padding: 0 2vw 0 0.8vw;
 }
 
 .right {
   border-left: 2px solid rgba(0, 0, 0, 0.3);
   flex: 1;
   box-sizing: border-box;
-  max-width: 300px;
+  max-width: 350px;
+  padding: 0 0.8vw 0 2vw;
 }
 
 .quick-links h3 {
@@ -64,8 +62,8 @@
 }
 
 /* Progress bar until cookies are auto accepted */
-.cookies-notification::before {
-  background-color: rgba(255, 255, 255, 0.5);
+.cookies-notification::before, .cookies-notification::after {
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   display: block;
   content: "";
@@ -73,7 +71,11 @@
   width: 100%;
   left: 0;
   top: 0;
+}
+
+.cookies-notification::before {
   animation: cookies-acceptance-progress-bar 10s linear;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Progress bar animation */
@@ -106,6 +108,14 @@
 .btn-close-cookies-notification:hover {
   background-image: url("../res/img/icon/cross_hover.png");
   cursor: pointer;
+}
+
+.cookies-notification a {
+  font-weight: bold;
+}
+
+.cookies-notification a:hover {
+  text-decoration: underline;
 }
 
 /* End Cookies Notification */

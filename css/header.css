@@ -14,7 +14,7 @@
   box-sizing: border-box;
   padding: 0.8vw;
   margin: auto;
-  max-width: 1500px;
+  max-width: 1400px;
   /*-webkit-text-stroke: 0.15vw black;*/
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.75);
 }
@@ -32,7 +32,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -130,8 +130,8 @@
 
 .directory-list-wrapper {
   margin: auto;
-  max-width: 1500px;
-}
+  max-width: 1400px;
+} 
 
 .directory-list {
   display: inline-block;
