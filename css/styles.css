@@ -12,7 +12,7 @@ a {
   color: inherit;
 }
 
-.content.main a {
+.content.main a.inline-link {
   color: #000;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.08);
@@ -23,7 +23,7 @@ a {
   transition: box-shadow 300ms ease;
 }
 
-.content.main a::before {
+.content.main a.inline-link::before {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -37,7 +37,7 @@ a {
   border-radius: 3px;
 }
 
-.content.main a::after {
+.content.main a.inline-link::after {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -51,21 +51,33 @@ a {
   border-radius: 3px;
 }
 
-.content.main a:hover::before {
+.content.main a.inline-link:hover::before {
   width: 100%;
 }
 
-.content.main a:active {
+.content.main a.inline-link:active {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.9);
 }
 
-.content.main a:active::after {
+.content.main a.inline-link:active::after {
   width: 100%;
 }
 
 h1 {
   font-family: "Lilita One", Bahnschrift, Helvetica, Arial, sans-serif;
   font-size: 4.7vw;
+}
+
+h3, h4 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0.7vw;
+}
+
+ul {
+  margin: 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -96,7 +108,7 @@ h1 {
   }
 }
 
-.unselectable {
+.unselectable, img {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
