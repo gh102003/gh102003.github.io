@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Google Fonts: "Lilita One" and "Open Sans" -->
-    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One%7COpen+Sans" rel="stylesheet">
 
     <!-- Material icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -37,12 +37,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!-- JS -->
+    <script src="js/browserTest.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/cookiesData.js"></script>
-    <script type="text/javascript">
+    <script>
       $(document).ready(function() {
-          initNavigation();
-          initCookies();
+        browserTest();
+        initNavigation();
+        initCookies();
       });
     </script>
 
@@ -117,9 +119,9 @@
                 <h3>Currency Converter</h3>
                 <p>This simple application can convert between two different currencies. The currencies it supports can be customised and updated from the internet. You can also save the conversions it makes to compare at a later date.</p>
               </div>
-              <a class="details-link" href="programming/currency_converter.html">More information<i class="material-icons">chevron_right</i></a>
+              <span class="details-link">More information<i class="material-icons">chevron_right</i></span>
           </div>
-          <img style="background-image: url(res/img/currency_converter/logoLowRes.png)" src="res/img/currency_converter/logoHighRes.png"/>
+          <img style="background-image: url(res/img/currency_converter/logoLowRes.png)" src="res/img/currency_converter/logoHighRes.png" alt="Currency Converter Logo"/>
         </div>
         </a>
 
