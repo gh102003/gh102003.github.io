@@ -1,6 +1,9 @@
 function initNavigation()
 {
+  console.log($(".btn-toggle-menu"));
   $(".btn-toggle-menu").click(function() {
+    console.log("clcik");
+    
 
     $(".directory").toggleClass("open");
 
