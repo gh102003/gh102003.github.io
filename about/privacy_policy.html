@@ -29,70 +29,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!-- JS -->
-    <script src="../js/navigation.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-          initNavigation();
+    <script src="/js/loadPage.js"></script>
+    <script src="/js/browserTest.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/cookiesData.js"></script>
+    <script>
+      $(document).ready(async function() {
+        await loadPage();
+        browserTest();
+        initNavigation();
       });
     </script>
 
   </head>
 
   <body>
-    <div class="header unselectable">
-      <div class="page-title">
-        <h1><a href="../index.html">Gh102003</a></h1>
-      </div>
 
-      <div class="navigation">
-        <div class="nav-bar">
-          <ul class="section-list">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../programming/programming.html">Programming</a></li>
-            <li><a href="../games/minecraft/minecraft.html">Minecraft</a></li>
-            <li><a href="../games/other_games.html">Other games</a></li>
-            <li><a href="../about/contact.html">Contact</a></li>
-          </ul>
-          <img class="btn-toggle-menu" src="../res/img/icon/toggle_directory.png" alt="toggle menu"/>
-        </div>
-
-        <div class="directory-wrapper">
-          <div class="directory">
-            <div class="directory-list-wrapper">
-              <ul class="directory-list">
-                <li><a href="../programming/currency_converter.html">Currency Converter</a></li>
-                <li><a href="../programming/recursion_mapper.html">Recursion Mapper</a></li>
-                <li><a href="../programming/noughts_and_crosses.html">Noughts and Crosses</a></li>
-                <li><a href="../programming/phototweak.html">PhotoTweak</a></li>
-                <li><a href="../programming/breakout.html">Breakout</a></li>
-              </ul>
-              <ul class="directory-list">
-                <li><a href="../programming/hurdles.html">Hurdles Simulation</a></li>
-                <li><a href="../programming/website.html">gh102003.github.io</a></li>
-                <li><a href="../games/minecraft/worlds.html">Minecraft worlds</a></li>
-                <li><a href="../games/minecraft/server.html">Minecraft server</a></li>
-                <li><a href="../games/euro_truck_simulator_2.html">Euro Truck Simulator 2</a></li>
-              </ul>
-              <ul class="directory-list">
-                <li><a href="../games/cities_skylines.html">Cities: Skylines</a></li>
-                <li><a href="../games/prison_architect.html">Prison Architect</a></li>
-                <li><a href="../games/kerbal_space_program.html">Kerbal Space Program</a></li>
-                <li><a href="../games/terraria.html">Terraria</a></li>
-                <li><a href="../games/mini_metro.html">Mini Metro</a></li>
-              </ul>
-              <ul class="directory-list">
-                <li><a href="../games/rocket_league.html">Rocket League</a></li>
-                <li><a href="../about/setup.html">Setup</a></li>
-                <li><a href="../about/software.html">Software</a></li>
-                <li><a href="../about/about.html">About</a></li>
-                <li><a href="../about/privacy_policy.html">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    <div class="header unselectable"></div>
 
     <div class="page">
       <div class="content main">
