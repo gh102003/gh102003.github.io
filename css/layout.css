@@ -127,18 +127,18 @@
 }
 
 /* Images with captions */
-.image-with-caption {
+.media-with-caption {
   background-color: rgba(0, 0, 0, 0.7);
-  width: 60%;
+  width: 70%;
   margin: 1vw auto;
   padding: 1vw;
 }
 
-.image-with-caption img {
+.media-with-caption img, .media-with-caption video {
   width: 100%;
 }
 
-.image-with-caption p {
+.media-with-caption p {
   color: white;
   margin: 0.5vw 0 0 0;
   line-height: 1.4em;
@@ -179,13 +179,13 @@
     width: 80%;
   }
 
-  .image-with-caption {
+  .media-with-caption {
     width: 80%;
     padding: 1.5vw;
     margin: 1.5vw auto;
   }
 
-  .image-with-caption p {
+  .media-with-caption p {
     margin: 0.6vw 0 0 0;
   }
 
@@ -224,13 +224,13 @@
     width: 100%;
   }
 
-  .image-with-caption {
+  .media-with-caption {
     width: 90%;
     padding: 3vw;
     margin: 3vw auto;
   }
 
-  .image-with-caption p {
+  .media-with-caption p {
     margin: 1.6vw 0 0 0;
   }
 
