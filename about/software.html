@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117158349-1"></script>
 
@@ -17,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/header.css" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../res/img/favicon/apple-touch-icon.png">
@@ -40,79 +41,62 @@
     <script src="/js/navigation.js"></script>
     <script src="/js/cookiesData.js"></script>
     <script>
-      $(document).ready(async function() {
-        await loadPage();
-        browserTest();
-        initNavigation();
-        initCookies();
-      });
+        $(document).ready(async function () {
+            await loadPage();
+            browserTest();
+            initNavigation();
+            initCookies();
+        });
     </script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <div class="header unselectable"></div>
 
     <div class="page">
-      <div class="content main">
-        <h2>Software I use</h2>
-        <p>Here is a list of the different pieces of software that I use:</p>
-        <ul>
-          <li>Programming
+        <div class="content main">
+            <h2>Software I use</h2>
+            <p>Here is a list of the different pieces of software that I use:</p>
             <ul>
-              <li>IntelliJ IDEA - for Java</li>
-              <li>Visual Studio - for C# and some full-stack projects</li>
-              <li>Visual Studio Code - for websites like this and sometimes Javascript</li>
-              <li>PyCharm - for some Python projects</li>
-              <li>Notepad++ - for tweaking configuration files</li>
+                <li>Programming
+                    <ul>
+                        <li>IntelliJ IDEA - for Java</li>
+                        <li>Visual Studio - for C# and some full-stack projects</li>
+                        <li>Visual Studio Code - for websites like this and sometimes Javascript</li>
+                        <li>PyCharm - for some Python projects</li>
+                        <li>Notepad++ - for tweaking configuration files</li>
+                    </ul>
+                </li>
+                <li>Gaming
+                    <ul>
+                        <li>Discord - a brilliant free voice chat service</li>
+                        <li>Steam - where most of my games come from</li>
+                        <li>Twitch Desktop App - for launching modded Minecraft</li>
+                    </ul>
+                </li>
+                <li>Media
+                    <ul>
+                        <li>VLC Media Player</li>
+                        <li>GIMP - a free photoshop alternative</li>
+                        <li>Serif PagePlus X4 - desktop publishing suite</li>
+                        <li>Serif DrawPlus X4 - vector graphics editor</li>
+                        <li>Spotify</li>
+                    </ul>
+                </li>
+                <li>Opera</li>
+                <li>Microsoft Office 2010</li>
             </ul>
-          </li>
-          <li>Gaming
-            <ul>
-              <li>Discord - a brilliant free voice chat service</li>
-              <li>Steam - where most of my games come from</li>
-              <li>Twitch Desktop App - for launching modded Minecraft</li>
-            </ul>
-          </li>
-          <li>Media
-            <ul>
-              <li>VLC Media Player</li>
-              <li>GIMP - a free photoshop alternative</li>
-              <li>Serif PagePlus X4 - desktop publishing suite</li>
-              <li>Serif DrawPlus X4 - vector graphics editor</li>
-              <li>Spotify</li>
-            </ul>
-          </li>
-          <li>Opera</li>
-          <li>Microsoft Office 2010</li>
-        </ul>
 
-      </div>
-      <div class="content right">
-        <div class="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="https://github.com/gh102003">GitHub</a></li>
-            <li><a href="https://www.youtube.com/channel/UCbMdEaJFjJrB1Yps4YhHSIA">YouTube</a></li>
-            <li><a href="https://www.twitch.tv/gh102003g">Twitch</a></li>
-          </ul>
         </div>
-        <!-- Sidebar ads -->
-        <div class="sidebar-ads unselectable">
-          <p>Advertisements</p>
-          <ins class="adsbygoogle"
-            data-ad-client="ca-pub-4432679655476297"
-            data-ad-slot="2873418420"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        </div>
-      </div>
+        <div class="content right"></div>
     </div>
     <div class="cookies-notification unselectable">
-      <p>By continuing to use this website, you agree to the use of cookies and analytics. <a href="../about/privacy_policy.html">Privacy Policy</a></p>
-      <div class="btn-close-cookies-notification"></div>
+        <p>By continuing to use this website, you agree to the use of cookies and analytics. <a href="../about/privacy_policy.html">Privacy
+                Policy</a></p>
+        <div class="btn-close-cookies-notification"></div>
     </div>
-  </body>
+</body>
 
 </html>
