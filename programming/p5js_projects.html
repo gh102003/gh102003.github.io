@@ -41,38 +41,40 @@
     <script src="/js/navigation.js"></script>
     <script src="/js/cookiesData.js"></script>
     <script>
-        $(document).ready(async function() {
-        await loadPage();
-        browserTest();
-        initNavigation();
-        initCookies();
-      });
+        $(document).ready(async function () {
+            await loadPage();
+            browserTest();
+            initNavigation();
+            initCookies();
+        });
     </script>
 
 </head>
 
 <body>
-
     <div class="header unselectable"></div>
 
     <div class="page">
         <div class="content main">
 
-            <h2>Cities: Skylines</h2>
-            <p>I currently play this game quite a bit and I own the After Dark and Mass Transit expansions.</p>
-            <p>I've played both with and without mods. Although there are times when I prefer vanilla for its
-                simpicity and for performance reasons, I usually play with mods for more customisation. There
-                is also the excellent <a class="block-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1619685021">'Move
-                    It!'</a> mod, which lets you fix errors even after you build things.</p>
+            <h2>p5.js Projects</h2>
+            <p>
+                After finding <a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" class="block-link">The Coding Train</a> on YouTube and watching a lot of his
+                videos, I decided to have a go with p5.js I started off by taking lots of inspiration from him, but
+                later made some more original projects.
+            </p>
 
-            <div class="media-with-caption">
-                <video controls>
-                    <source src="/res/video/cities_skylines/montage.mp4" type="video/mp4">
-                </video>
-                <p>A showcase from one of my modded cities</p>
-            </div>
+            <p>Here's a list of these projects, with links to try some of them out. Please note that these links may be slightly out of date, so for the latest versions download them directly from the GitHub repository. 
+                <ul>
+                    <li><a href="/programming/hosted_projects/TreeFractal/index.html">Tree Fractal</a> &mdash; randomly generates a tree using fractals and recursion</li>
+                    <li><a href="/programming/hosted_projects/Differentiation/index.html">Differentiation</a> &mdash; interactive visualisation of differentiation</li>
+                    <li><a href="/programming/hosted_projects/FairyLightsGame/index.html">Fairy Lights Game</a> &mdash; game where the objective is to turn every light on</li>
+                    <li><a href="/programming/hosted_projects/CirclePacking/index.html">Circle Packing</a> &mdash; circles grow to fill the canvas</li>
+                    <li><a href="/programming/hosted_projects/WordFrequency/index.html">Word Frequency</a> &mdash; analyses and compares words in public domain books</li>
+                </ul>
+            </p>
 
-            <a class="block-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1619685021">Cities: Skylines on Steam</a>
+            <a href="https://github.com/gh102003/p5js-projects" class="block-link">GitHub</a>
 
         </div>
         <div class="content right"></div>
@@ -80,8 +82,8 @@
     <div class="cookies-notification">
         <p>By continuing to use this website, you agree to the use of cookies and analytics. <a href="../about/privacy_policy.html">Privacy
                 Policy</a></p>
-        <div class="btn-close-cookies-notification"></div>
-    </div>
+        <div class="btn-close-cookies-notification">
+        </div>
 </body>
 
 </html>

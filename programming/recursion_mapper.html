@@ -41,38 +41,48 @@
     <script src="/js/navigation.js"></script>
     <script src="/js/cookiesData.js"></script>
     <script>
-        $(document).ready(async function() {
-        await loadPage();
-        browserTest();
-        initNavigation();
-        initCookies();
-      });
+        $(document).ready(async function () {
+            await loadPage();
+            browserTest();
+            initNavigation();
+            initCookies();
+        });
     </script>
 
 </head>
 
 <body>
-
     <div class="header unselectable"></div>
 
     <div class="page">
         <div class="content main">
 
-            <h2>Cities: Skylines</h2>
-            <p>I currently play this game quite a bit and I own the After Dark and Mass Transit expansions.</p>
-            <p>I've played both with and without mods. Although there are times when I prefer vanilla for its
-                simpicity and for performance reasons, I usually play with mods for more customisation. There
-                is also the excellent <a class="block-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1619685021">'Move
-                    It!'</a> mod, which lets you fix errors even after you build things.</p>
+            <h2>Recursion Mapper</h2>
+
+            <p>
+                Recursion Mapper is designed to find the shortest route between two nodes. It can look at the number of
+                connections, the distance to travel or it can consider the weighting of different connections.
+            </p>
+            <p>
+                It has three ways to render the network. The first is static, where all nodes and connections are the
+                same size, no matter what their weight is. The second is dynamic, which makes higher weighted nodes and
+                connections bigger. The last, and currently least stable, is textured mode. This makes nodes behave
+                like settlements, with different textures for different sizes, and makes connections like roads, which
+                have a dynamically generated number of lanes based on their weight.
+            </p>
+            <p>
+                I also introduced themes, which style the textured mode differently. These are all stored in files
+                which are editable by the user. For example, there could be a desert theme, or a winter theme or a
+                rural theme.
+            </p>
 
             <div class="media-with-caption">
-                <video controls>
-                    <source src="/res/video/cities_skylines/montage.mp4" type="video/mp4">
-                </video>
-                <p>A showcase from one of my modded cities</p>
+                <img style="background-image: url(/res/img/recursion_mapper/screenshotLowRes.png)" src="/res/img/recursion_mapper/screenshotHighRes.png"
+                    alt="Currency Converter screenshot">
+                <p>A conversion with the currency details and saves panels open</p>
             </div>
 
-            <a class="block-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1619685021">Cities: Skylines on Steam</a>
+            <p><a class="block-link" href="https://github.com/gh102003/Recursion-Mapper">GitHub</a></p>
 
         </div>
         <div class="content right"></div>
@@ -80,8 +90,8 @@
     <div class="cookies-notification">
         <p>By continuing to use this website, you agree to the use of cookies and analytics. <a href="../about/privacy_policy.html">Privacy
                 Policy</a></p>
-        <div class="btn-close-cookies-notification"></div>
-    </div>
+        <div class="btn-close-cookies-notification">
+        </div>
 </body>
 
 </html>
