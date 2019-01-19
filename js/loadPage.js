@@ -4,7 +4,7 @@ function loadPage() {
     });
 
     let contentRightPromise = new Promise(function(resolve, reject) {
-        $(".right").load("/content_right.html", null, resolve);
+        $(".content.right").load("/content_right.html", null, resolve);
     });
 
     // Make sure everything has loaded
