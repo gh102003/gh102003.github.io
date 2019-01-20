@@ -1,6 +1,5 @@
 # TODO
 
-- Page titles
 - Consider publicity/security of all links and content
 
 ## Long term
