@@ -12,8 +12,11 @@ function initCookies() {
 function cookiesNotifcationSetup() {
     $(".btn-close-cookies-notification").click(function () {
         // Close the popup
-        $(".cookies-notification").slideToggle({"duration": 400, "easing": "easeInOutCubic"});
-        
+        $(".cookies-notification").slideToggle({
+            "duration": 400,
+            "easing": "easeInOutCubic"
+        });
+
         // Store a value to say that the user knows about cookies
         localStorage.setItem("dismissedCookies", "true");
 
@@ -31,7 +34,7 @@ function checkCookiesDismissed() {
     }
     return false;
 }
-  
+
 function acceptCookies() {
     if (!cookiesAccepted) {
         cookiesAccepted = true;
@@ -44,6 +47,7 @@ function acceptCookies() {
 
 function setupAnalytics() {
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -55,5 +59,5 @@ function setupAdvertisements() {
     (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-4432679655476297",
         enable_page_level_ads: true
-      });
+    });
 }
