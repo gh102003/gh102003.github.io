@@ -28,9 +28,11 @@ function cookiesNotifcationSetup() {
 }
 
 function checkCookiesDismissed() {
-    if (localStorage.getItem("dismissedCookies") == "true") {
+    console.log(localStorage.getItem("dismissedCookies"));
+    if (localStorage.getItem("dismissedCookies") === "true") {
         $(".cookies-notification").hide();
         return true;
+        
     }
     return false;
 }
