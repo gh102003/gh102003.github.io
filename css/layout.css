@@ -62,7 +62,8 @@
 }
 
 /* Progress bar until cookies are auto accepted */
-.cookies-notification::before, .cookies-notification::after {
+.cookies-notification::before,
+.cookies-notification::after {
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   display: block;
@@ -83,6 +84,7 @@
   from {
     width: 0%;
   }
+
   to {
     width: 100%;
   }
@@ -134,7 +136,8 @@
   padding: 1vw;
 }
 
-.media-with-caption img, .media-with-caption video {
+.media-with-caption img,
+.media-with-caption video {
   width: 100%;
 }
 
@@ -147,7 +150,7 @@
 /* End images with captions */
 
 .main img {
-  background-size: cover; 
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -315,7 +318,7 @@
   .teaser {
     padding: 1.5vw;
   }
-  
+
   .teaser-text {
     font-size: 1.4vw;
     line-height: 1.6em;
@@ -354,5 +357,53 @@
   .teaser h3 {
     font-size: 5vw;
     margin: 1vw 0;
+  }
+}
+
+/* Parallax images */
+.parallax-image {
+  height: 60vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  left: 0;
+  width: 100%;
+  /* margin: 2vw 0; */
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-wrapper .parallax-image:first-child {
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.6) inset;
+}
+
+.parallax-wrapper .parallax-image:last-child {
+  box-shadow: 0 -20px 20px -20px rgba(0, 0, 0, 0.6) inset;
+}
+
+.parallax-image p {
+  font-family: "Lilita One", Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+@media only screen and (max-width: 650px) {
+  .parallax-image {
+    height: 50vh;
+  }
+
+  .parallax-image p {
+    font-size: 5vw;
   }
 }
