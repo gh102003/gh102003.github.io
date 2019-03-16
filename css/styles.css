@@ -89,6 +89,10 @@ ul {
   margin: 0;
 }
 
+p + ul {
+  margin-top: -1em;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
     font-size: 1.6vw;

@@ -24,10 +24,9 @@ body {
 
 #page > div {
     outline: 3px solid #888;
-    -moz-outline-radius: 5px;
 }
 
-#options, #draw-options {
+.options {
     font-size: 20px;
     padding: 5px;
 }
@@ -36,12 +35,24 @@ select {
     font-size: 20px;
 }
 
-#options > div > * {
-    vertical-align: middle;
+#draw-options label {
+    padding: 0 10px 0 2px;
 }
 
-#draw-options label {
-    margin-right: 8px;
+label {
+    user-select: none;
+}
+
+.options p {
+    margin: 0;
+}
+
+#line-options > div {
+    margin-bottom: 5px;
+}
+
+.line-options input[type=range]+span {
+    margin-left: 6px;
 }
 
 h1 {
