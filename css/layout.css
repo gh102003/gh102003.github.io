@@ -260,7 +260,7 @@ main img {
 }
 
 .teaser:nth-of-type(2n) {
-  flex-direction: row-reverse;
+  flex-flow: row-reverse nowrap;
 }
 
 .teaser:hover {
@@ -286,7 +286,7 @@ main img {
 }
 
 .teaser h3 {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   margin: 0.8vw 0;
 }
 
@@ -360,7 +360,7 @@ main img {
   }
 
   .teaser {
-    flex-flow: column nowrap;
+    flex-flow: column nowrap !important;
     margin: 3vw 0;
   }
 
