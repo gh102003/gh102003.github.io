@@ -12,12 +12,12 @@ a {
   color: inherit;
 }
 
-main a:not(.teaser-wrapper) {
+main a:not(.details-link) {
   color: #d45900;
   cursor: pointer;
 }
 
-main a:hover:not(.teaser-wrapper) {
+main a:hover:not(.details.link) {
   font-weight: bold;
 }
 
