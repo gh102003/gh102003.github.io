@@ -13,6 +13,10 @@ main {
   padding: 0 2vw 0 0.8vw;
 }
 
+main p:first-child {
+  margin-top: 1em;
+}
+
 .right {
   border-left: 1px solid black;
   flex: 1;
@@ -149,7 +153,7 @@ figcaption {
 
 /* End images with captions */
 
-.main img {
+main img {
   background-size: cover;
 }
 
@@ -158,7 +162,7 @@ figcaption {
     padding: 0 1.4vw;
   }
 
-  .main {
+  main {
     flex: 3;
     padding: 0 3vw 0 0;
   }
@@ -202,7 +206,7 @@ figcaption {
     padding: 0 3vw;
   }
 
-  .main {
+  main {
     flex: 1 100%;
     padding: 0 0 5vw 0;
   }
@@ -255,6 +259,10 @@ figcaption {
   margin: 1vw 0;
 }
 
+.teaser:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
 .teaser:hover {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.7);
   transform: translate(2px, 2px);
@@ -278,8 +286,7 @@ figcaption {
 }
 
 .teaser h3 {
-  font-family: Bahnschrift, Helvetica, Arial, sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin: 0.8vw 0;
 }
 
@@ -318,6 +325,7 @@ figcaption {
 @media only screen and (max-width: 1200px) {
   .teaser {
     padding: 1.5vw;
+    margin: 1.8vw 0;
   }
 
   .teaser-text {
@@ -353,6 +361,7 @@ figcaption {
 
   .teaser {
     flex-flow: column nowrap;
+    margin: 3vw 0;
   }
 
   .teaser h3 {
