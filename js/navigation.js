@@ -1,4 +1,7 @@
 function initNavigation() {
+    console.log("init nav");
+    
+    
     $(".btn-toggle-menu").click(function () {
         $(".directory").toggleClass("open");
 
