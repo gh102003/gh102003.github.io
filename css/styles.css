@@ -12,16 +12,16 @@ a {
   color: inherit;
 }
 
-.main a:not(.teaser-wrapper) {
+main a:not(.teaser-wrapper) {
   color: #d45900;
   cursor: pointer;
 }
 
-.main a:hover:not(.teaser-wrapper) {
+main a:hover:not(.teaser-wrapper) {
   font-weight: bold;
 }
 
-.content.main a.block-link {
+main a.block-link {
   color: #000;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.1);
@@ -32,7 +32,7 @@ a {
   transition: box-shadow 200ms ease;
 }
 
-.content.main a.block-link::before {
+main a.block-link::before {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -46,7 +46,7 @@ a {
   border-radius: 3px;
 }
 
-.content.main a.block-link::after {
+main a.block-link::after {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -60,15 +60,15 @@ a {
   border-radius: 3px;
 }
 
-.content.main a.block-link:hover::before {
+main a.block-link:hover::before {
   width: 100%;
 }
 
-.content.main a.block-link:active {
+main a.block-link:active {
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.9);
 }
 
-.content.main a.block-link:active::after {
+main a.block-link:active::after {
   width: 100%;
 }
 
@@ -102,7 +102,7 @@ p + ul {
     font-size: 7vw;
   }
 
-  .content.main a {
+  main a {
     padding: 0.3vw 0.6vw;
   }
 }
@@ -116,7 +116,7 @@ p + ul {
     font-size: 13vw;
   }
 
-  .content.main a {
+  main a {
     padding: 0.5vw 1.2vw;
   }
 }

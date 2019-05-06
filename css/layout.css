@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.main {
+main {
   flex: 3;
   box-sizing: border-box;
   max-width: 1050px;
@@ -129,19 +129,19 @@
 }
 
 /* Images with captions */
-.media-with-caption {
+figure {
   background-color: rgba(0, 0, 0, 0.7);
   width: 70%;
   margin: 1vw auto;
   padding: 1vw;
 }
 
-.media-with-caption img,
-.media-with-caption video {
+figure img,
+figure video {
   width: 100%;
 }
 
-.media-with-caption p {
+figcaption {
   color: white;
   margin: 0.5vw 0 0 0;
   line-height: 1.4em;
@@ -153,7 +153,7 @@
   background-size: cover;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .page {
     padding: 0 1.4vw;
   }
@@ -182,13 +182,13 @@
     width: 80%;
   }
 
-  .media-with-caption {
+  figure {
     width: 80%;
     padding: 1.5vw;
     margin: 1.5vw auto;
   }
 
-  .media-with-caption p {
+  figcaption {
     margin: 0.6vw 0 0 0;
   }
 
@@ -227,13 +227,13 @@
     width: 100%;
   }
 
-  .media-with-caption {
+  figure {
     width: 90%;
     padding: 3vw;
     margin: 3vw auto;
   }
 
-  .media-with-caption p {
+  figcaption {
     margin: 1.6vw 0 0 0;
   }
 
@@ -252,6 +252,7 @@
   box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.3);
   transition: box-shadow 100ms, transform 100ms;
   cursor: pointer;
+  margin: 1vw 0;
 }
 
 .teaser:hover {
@@ -314,7 +315,7 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .teaser {
     padding: 1.5vw;
   }
