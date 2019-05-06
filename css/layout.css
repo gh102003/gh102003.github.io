@@ -5,12 +5,16 @@
   justify-content: center;
 }
 
-.main {
+main {
   flex: 3;
   box-sizing: border-box;
   max-width: 1050px;
   line-height: 1.7em;
   padding: 0 2vw 0 0.8vw;
+}
+
+main p:first-child {
+  margin-top: 1em;
 }
 
 .right {
@@ -125,23 +129,23 @@
 .title-image {
   width: 70%;
   display: block;
-  margin: auto;
+  margin: 2em auto;
 }
 
 /* Images with captions */
-.media-with-caption {
+figure {
   background-color: rgba(0, 0, 0, 0.7);
   width: 70%;
   margin: 1vw auto;
   padding: 1vw;
 }
 
-.media-with-caption img,
-.media-with-caption video {
+figure img,
+figure video {
   width: 100%;
 }
 
-.media-with-caption p {
+figcaption {
   color: white;
   margin: 0.5vw 0 0 0;
   line-height: 1.4em;
@@ -149,16 +153,16 @@
 
 /* End images with captions */
 
-.main img {
+main img {
   background-size: cover;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .page {
     padding: 0 1.4vw;
   }
 
-  .main {
+  main {
     flex: 3;
     padding: 0 3vw 0 0;
   }
@@ -182,13 +186,13 @@
     width: 80%;
   }
 
-  .media-with-caption {
+  figure {
     width: 80%;
     padding: 1.5vw;
     margin: 1.5vw auto;
   }
 
-  .media-with-caption p {
+  figcaption {
     margin: 0.6vw 0 0 0;
   }
 
@@ -202,7 +206,7 @@
     padding: 0 3vw;
   }
 
-  .main {
+  main {
     flex: 1 100%;
     padding: 0 0 5vw 0;
   }
@@ -227,13 +231,13 @@
     width: 100%;
   }
 
-  .media-with-caption {
+  figure {
     width: 90%;
     padding: 3vw;
     margin: 3vw auto;
   }
 
-  .media-with-caption p {
+  figcaption {
     margin: 1.6vw 0 0 0;
   }
 
@@ -252,6 +256,11 @@
   box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.3);
   transition: box-shadow 100ms, transform 100ms;
   cursor: pointer;
+  margin: 1vw 0;
+}
+
+.teaser:nth-of-type(2n) {
+  flex-direction: row-reverse;
 }
 
 .teaser:hover {
@@ -277,8 +286,7 @@
 }
 
 .teaser h3 {
-  font-family: Bahnschrift, Helvetica, Arial, sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin: 0.8vw 0;
 }
 
@@ -314,9 +322,10 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   .teaser {
     padding: 1.5vw;
+    margin: 1.8vw 0;
   }
 
   .teaser-text {
@@ -352,6 +361,7 @@
 
   .teaser {
     flex-flow: column nowrap;
+    margin: 3vw 0;
   }
 
   .teaser h3 {

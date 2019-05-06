@@ -41,11 +41,12 @@
     <script src="/js/navigation.js"></script>
     <script src="/js/cookiesData.js"></script>
     <script>
-        $(document).ready(async function () {
-            await loadPage();
-            browserTest();
-            initNavigation();
-            initCookies();
+        $(document).ready(() => {
+            loadPage().then(() => {
+                browserTest();
+                initNavigation();
+                initCookies();
+            });
         });
     </script>
 
@@ -61,15 +62,22 @@
 </head>
 
 <body>
-    <div class="header unselectable"></div>
+    <header class="unselectable"></header>
 
     <div class="page">
-        <div class="content main">
+        <main>
 
             <h2>Flash</h2>
 
-            <p>Flash is a simple flashcards web app. It is currently in development, but I'll post a link to it here
-                when it's done</p>
+            <p>
+                Flash is a simple flashcards web app. Although it is still in development, you can find an 
+                early version <a href="http://flashapp.uk.to">here</a>. Please note that this may not always 
+                be live, so if it doesn't work, please try again later.
+            </p>
+
+            <p>Flash has been an insight for me into <a href="https://reactjs.org/">React.js</a>. It also 
+                uses <a href="https://reacttraining.com/react-router/">React Router</a> and a few other 
+                smaller libraries.</p>
 
             <p>
                 Features:
@@ -77,12 +85,13 @@
                     <li>Categories</li>
                     <li>Colour coding</li>
                     <li>Full screen mode</li>
+                    <li>Quizzes</li>
                 </ul>
             </p>
 
             <p><a class="block-link" href="https://github.com/gh102003/Flash">GitHub</a></p>
 
-        </div>
+        </main>
         <div class="content right"></div>
     </div>
     <div class="cookies-notification">

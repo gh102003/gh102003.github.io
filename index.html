@@ -63,31 +63,45 @@
 
 <body>
 
-    <div class="header unselectable"></div>
+    <header class="unselectable"></header>
 
     <div class="page">
-        <div class="content main">
+        <main>
             <p>I am George. I like computers and games.
                 You can find some links in the navigation bar the top of the page, which
                 detail each of my hobbies. Some projects have images and even videos to look at.</p>
 
-            <a href="programming/currency_converter.html" class="teaser-wrapper">
-                <div class="teaser">
-                    <div class="teaser-text">
-                        <div>
-                            <h3>Currency Converter</h3>
-                            <p>This simple application can convert between two different currencies. The currencies it
-                                supports can be customised and updated from the internet. You can also save the
-                                conversions it makes to compare at a later date.</p>
-                        </div>
-                        <span class="details-link">More information<i class="material-icons">chevron_right</i></span>
+            <aside class="teaser" onclick="window.location='/programming/currency_converter.html'">
+                <div class="teaser-text">
+                    <div>
+                        <h3>Currency Converter</h3>
+                        <p>
+                            This simple application can convert between two different currencies. The currencies it
+                            supports can be customised and updated from the internet. You can also save the
+                            conversions it makes to compare at a later date.
+                        </p>
                     </div>
-                    <img style="background-image: url(res/img/currency_converter/logoLowRes.png)" src="res/img/currency_converter/logoHighRes.png"
-                        alt="Currency Converter Logo" />
+                    <span class="details-link">More information<i class="material-icons">chevron_right</i></span>
                 </div>
-            </a>
+                <img class="image-res-change" style="background-image: url(res/img/currency_converter/logoLowRes.png)" src="res/img/currency_converter/logoLowRes.png"
+                    alt="Currency Converter Logo" />
+            </aside>
+            <aside class="teaser" onclick="window.location='/programming/flash.html'">
+                <div class="teaser-text">
+                    <div>
+                        <h3>Flash</h3>
+                        <p>
+                            A single page web application that stores and manages flashcards. It can quiz you on a 
+                            group, and sort the cards into categories
+                        </p>
+                    </div>
+                    <span class="details-link">More information<i class="material-icons">chevron_right</i></span>
+                </div>
+                <img class="image-res-change" style="background-image: url(res/img/flash/screenshotLowRes.png)" src="res/img/flash/screenshotLowRes.png"
+                    alt="Flash screenshot" />
+            </aside>
 
-        </div>
+        </main>
         <div class="content right"></div>
     </div>
     <div class="cookies-notification unselectable">
