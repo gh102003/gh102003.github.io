@@ -48,6 +48,10 @@
                 initCookies();
             });
         });
+
+        $(window).on("load", () => {
+            loadImages();
+        });
     </script>
 
     <!-- Temp for adsense verification -->
@@ -70,23 +74,34 @@
             <h2>Flash</h2>
 
             <p>
-                Flash is a simple flashcards web app. Although it is still in development, you can find an 
-                early version <a href="http://flashapp.uk.to">here</a>. Please note that this may not always 
-                be live, so if it doesn't work, please try again later.
+                Flash is a simple flashcards web app. Although it's still in development, there is an
+                <a href="http://flashapp.uk.to">early version</a> you can try. Please note that this 
+                isn't always live, so if it doesn't work, please try again later.
             </p>
 
-            <p>Flash has been an insight for me into <a href="https://reactjs.org/">React.js</a>. It also 
+            <figure>
+                <img class="image-res-change" src="/res/img/flash/screenshotLowRes.png" style="background-image: url(/res/img/flash/screenshotLowRes.png)" alt="Flash screenshot">
+                <figcaption>A sample category of flashcards, including subcategories</figcaption>
+            </figure>
+
+            <p>
+                Flash has been an insight for me into <a href="https://reactjs.org/">React.js</a>. It also 
                 uses <a href="https://reacttraining.com/react-router/">React Router</a> and a few other 
                 smaller libraries.</p>
-
             <p>
                 Features:
                 <ul>
-                    <li>Categories</li>
-                    <li>Colour coding</li>
-                    <li>Full screen mode</li>
-                    <li>Quizzes</li>
+                    <li>Categories &mdash; can be dragged into other categories</li>
+                    <li>Colour coding &mdash; categories can be coloured, either from the palette or a hex code</li>
+                    <li>Full screen mode &mdash; to view a flashcard isolated from the rest</li>
+                    <li>Quizzes &mdash; to test your knowledge</li>
                 </ul>
+            </p>
+
+            <p>
+                Later on, I will add a dark theme and I will optimise the loading of categories. I may decide
+                to add an authentication system, so only users with permission can edit the cards; this would
+                make Flash more suitable for real-world use.
             </p>
 
             <p><a class="block-link" href="https://github.com/gh102003/Flash">GitHub</a></p>
