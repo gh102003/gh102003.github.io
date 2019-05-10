@@ -40,14 +40,10 @@
     <script src="/js/browserTest.js"></script>
     <script src="/js/navigation.js"></script>
     <script src="/js/cookiesData.js"></script>
+    <script>browserTest()</script>
     <script>
         $(document).ready(() => {
-            console.log("doc ready");
-            
             loadPage().then(() => {
-                console.log("load then");
-                
-                browserTest();
                 initNavigation();
                 initCookies();
             });

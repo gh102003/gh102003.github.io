@@ -9,7 +9,7 @@ function initNavigation() {
                 "queue": false
             });
             $(".directory").animate({
-                "top": "-10.9vw"
+                "top": "-9vw"
             }, {
                 "duration": 500,
                 "easing": "easeInOutCubic",

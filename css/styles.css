@@ -17,7 +17,7 @@ main a:not(.details-link) {
   cursor: pointer;
 }
 
-main a:hover:not(.details.link) {
+main a:hover:not(.details-link) {
   font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ h1 {
 h2 {
   /* font-weight: normal; */
   font-size: 2vw;
-  margin: 1.5vw 0 0.3vw 0;
+  margin: 1.6vw 0 0.3vw 0;
 }
 
 h3 {
@@ -115,7 +115,7 @@ p + ul {
 
   h2 {
     font-size: 3vw;
-    margin: 2vw 0 0.8vw 0;
+    margin: 2.2vw 0 0.8vw 0;
   }
 
   h3 {
@@ -129,7 +129,7 @@ p + ul {
 
 @media only screen and (max-width: 650px) {
   body {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
 
   h1 {
@@ -138,7 +138,7 @@ p + ul {
 
   h2 {
     font-size: 6vw;
-    margin: 3vw 0 1.5vw 0;
+    margin: 4vw 0 1.5vw 0;
   }
 
   h3 {
