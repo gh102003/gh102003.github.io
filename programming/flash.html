@@ -74,9 +74,9 @@
             <h2>Flash</h2>
 
             <p>
-                Flash is a simple flashcards web app. Although it's still in development, there is an
-                <a href="http://flashapp.uk.to">early version</a> you can try. Please note that this 
-                isn't always live, so if it doesn't work, please try again later.
+                <a href="https://flashapp.uk.to">Flash</a> is a simple flashcards web app. It's now live 
+                in production, running from my Raspberry Pi. The frontend is running on a Nginx server and
+                the backend is routed through a reverse proxy to a Node.js server managed by pm2.
             </p>
 
             <figure>
@@ -87,7 +87,7 @@
             <p>
                 Flash has been an insight for me into <a href="https://reactjs.org/">React.js</a>. It also 
                 uses <a href="https://reacttraining.com/react-router/">React Router</a> and a few other 
-                smaller libraries.</p>
+                smaller libraries to build a user experience that flows well with fluid CSS animations.</p>
             <p>
                 Features:
                 <ul>
@@ -112,12 +112,22 @@
             </p>
 
             <p>
-                Later on, I will add a dark theme and I will optimise the loading of categories. I may decide
-                to add an authentication system, so only users with permission can edit the cards; this would
-                make Flash more suitable for real-world use.
+                The authentication system was a challenge to create because I had never done anything like it
+                before. I read into <a href="https://jwt.io/">JSON Web Tokens</a> and also had to create an
+                HTTPS certificate with <a href="https://certbot.eff.org">CertBot</a>. This allows each user to
+                have their own area for flashcards that can't be disrupted by anybody else. Despite this, I
+                still haven't gotten round to integrating this with my tags system, so at the moment the same
+                set of tags are common to all users. 
             </p>
 
-            <p><a class="block-link" href="https://github.com/gh102003/Flash">GitHub</a></p>
+            <p>
+                Later on, I will add a dark theme and I will optimise the loading of categories. I may decide
+                to add an authentication system, so only users with permission can edit the cards; this would
+                make Flash more suitable for real-world use. I also need to look into replacing my drag-n-drop
+                library with a mobile-first solution to make my web app accessible to everyone.
+            </p>
+
+            <p><a class="block-link" href="https://github.com/gh102003/Flash">Flash on GitHub</a></p>
 
         </main>
         <div class="content right"></div>
